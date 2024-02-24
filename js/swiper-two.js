@@ -6,3 +6,7 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prevs",
     },
   });
+var swipers = new Swiper(".mySwiper2", {
+  slidesPerView: 2,
+  spaceBetween: 24,
+  });
