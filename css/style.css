@@ -808,6 +808,7 @@ body {
 /* ///////////ANIMATION//////////// */
 /* ///////////Public//////////// */
 .Public {
+	overflow-x: hidden;
 	padding-left: 63px;
 	padding-bottom: 160px;
 	display: flex;
@@ -894,7 +895,7 @@ body {
 .Reviews {
 	padding-left: 63px;
 	padding-bottom: 164px;
-	
+	overflow-x: hidden;
 }
 .Reviews h2{
 	padding-bottom: 70px;
@@ -907,7 +908,9 @@ body {
 	padding: 12px 12px 12px 40px;
 	background-color: #F8F8F8;
 	border: 1px solid #DCDCDC;
-	max-width: 835px;
+	max-width: 835px!important;
+	width: 100%!important;
+	gap: 38px;
 	display: flex!important;
 	justify-content: space-between;
 }
@@ -1000,3 +1003,45 @@ body {
 	text-decoration: underline!important;
 }
 /* ///////////Reviews//////////// */
+
+
+
+
+@media (max-width:1366px) {
+	.header_rigth {
+		right: 63px;
+		padding: 30px;
+		max-width: 845px;
+		margin-top: 145px;
+	}
+	.title-1 {
+		font-size: 60px;
+		font-weight: 700;
+		line-height: 80px;
+		letter-spacing: -0.03em;
+		text-align: left;
+	}
+	.hiden {
+		display: none;
+	}
+	.header_left {
+		max-width: 582px;
+		height: 665px;
+		width: 100%;
+		margin-left: 0;
+		transform: rotate(-5deg);
+		position: relative;
+		transition: .3s;
+		cursor: pointer;
+	}
+	.title-2 {
+		font-size: 54px;
+		font-weight: 500;
+		line-height: 72px;
+		letter-spacing: -0.03em;
+		text-align: left;
+		max-width: 800px;
+	}
+	
+	
+}
